@@ -65,6 +65,7 @@ chart.data = [ {
     valueAxis2.title.text = "USD (billions)";
     valueAxis2.renderer.opposite = true;    
     valueAxis2.renderer.grid.template.stroke = "grey";
+    valueAxis2.renderer.minGridDistance = 50;
     
     // LINE SERIES
     var series1 = chart.series.push(new am4charts.LineSeries());
