@@ -9,9 +9,24 @@ var chart = am4core.create("chartdiv", am4charts.XYChart);
     // Data for both series
 chart.data = [ {
       "year": "1990",
-      "funds": 21.1,
+      "funds": 8,
       "capital_raised": 11.5
-
+    }, {
+      "year": "1991",
+      "funds": 22,
+      "capital_raised": 15
+    }, {
+      "year": "1992",
+      "funds": 24,
+      "capital_raised": 16
+    }, {
+      "year": "1993",
+      "funds": 28,
+      "capital_raised": 18
+    }, {
+      "year": "1994",
+      "funds": 27,
+      "capital_raised": 17
     }, {
       "year": "1995",
       "funds": 30.5,
@@ -55,12 +70,12 @@ chart.data = [ {
     dateAxis.title.text = "Year"
     dateAxis.renderer.grid.template.stroke = "grey";
 
-    /* LEFT Y AXIS  */
+    /* LEFT Y AXIS  (LINE) */
     var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis1.title.text = "Number of Unique Funds";
     valueAxis1.renderer.grid.template.disabled = true;
 
-    /* RIGHT Y AXIS */
+    /* RIGHT Y AXIS (COLUMNS) */
     var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis2.title.text = "USD (billions)";
     valueAxis2.renderer.opposite = true;    
@@ -74,7 +89,7 @@ chart.data = [ {
     series1.name = "Funds";
     series1.stroke = am4core.color("black");
     series1.strokeWidth = 2;
-    series1.tensionX = 0.7;
+    series1.tensionX = 2;
     series1.yAxis = valueAxis1;
     // series1.tooltipText = "{name}\n[bold font-size: 20]{valueY}[/]";
     
@@ -89,7 +104,8 @@ chart.data = [ {
     series2.columns.template.fill = am4core.color("#CC2431")
     series2.strokeWidth = 0;
     series2.clustered = false;
-    series2.columns.template.width = am4core.percent(40);
+    series2.columns.template.width = am4core.percent(80);
+    series2.toBack()
 
     chart.legend = new am4charts.Legend();
     chart.legend.position = "bottom";
