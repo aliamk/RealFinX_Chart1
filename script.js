@@ -5,57 +5,58 @@ am4core.useTheme(am4themes_animated);
 
 // Create chart instance
 var chart = am4core.create("chartdiv", am4charts.XYChart);
-    
+chart.numberFormatter.numberFormat = "#.a"
+
     // Data for both series
 chart.data = [ {
       "year": "1990",
-      "funds": 8,
+      "funds": 12000,
       "capital_raised": 11.5
     }, {
       "year": "1991",
-      "funds": 22,
+      "funds": 22000,
       "capital_raised": 15
     }, {
       "year": "1992",
-      "funds": 24,
+      "funds": 24000,
       "capital_raised": 16
     }, {
       "year": "1993",
-      "funds": 28,
+      "funds": 28000,
       "capital_raised": 18
     }, {
       "year": "1994",
-      "funds": 27,
+      "funds": 27000,
       "capital_raised": 17
     }, {
       "year": "1995",
-      "funds": 30.5,
+      "funds": 30000,
       "capital_raised": 26.2
     }, {
       "year": "2000",
-      "funds": 34.9,
+      "funds": 34000,
       "capital_raised": 30.1      
     }, {
       "year": "2005",
-      "funds": 31.1,
+      "funds": 31000,
       "capital_raised": 29.5
     }, {
       "year": "2010",
-      "funds": 92,
+      "funds": 92000,
       "capital_raised": 30.6,
       "lineDash": "5,5",
     }, {
         "year": "2015",
-        "funds": 20,
+        "funds": 20000,
         "capital_raised": 30.6,
         "lineDash": "5,5",
     }, {
         "year": "2017",
-        "funds": 130,
+        "funds": 130000,
         "capital_raised": 40.6        
     }, {
       "year": "2020",
-      "funds": 197,
+      "funds": 197000,
       "capital_raised": 59.6,
 
       "strokeWidth": 1,
@@ -74,6 +75,8 @@ chart.data = [ {
     var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis1.title.text = "Number of Unique Funds";
     valueAxis1.renderer.grid.template.disabled = true;
+    valueAxis1.renderer.minGridDistance = 50;
+    
 
     /* RIGHT Y AXIS (COLUMNS) */
     var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
