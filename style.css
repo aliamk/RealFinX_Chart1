@@ -23,6 +23,7 @@ html, body {
     background-color: #212121;
     float: left;    
     margin-right: 1em;
+    padding-bottom: 142em;
     flex-direction: column;
 }
 
@@ -72,30 +73,36 @@ h1 {
 #chartdiv {
     width: 80vw;
     height:85vh;
-    min-height: 50vh;    
+    min-height: 50vh;        
     margin-bottom: 2em;
     flex-direction: column;
     background-color: white;
     border-radius: 5px;
     font-family: 'Source Sans Pro', sans-serif;
-
   }
 
-  #chartdata {
-    height: 100%;
-    width: 100%;
-    
+  #chartdata {    
     font-family: 'Source Sans Pro', sans-serif;    
   }
   
   #chartdata table {
     width: 100%;
     text-align: center;
+    padding: 0;
   }
   
-  .table-responsive {
-      width: 100vw;
-  }
+#chartdata th {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    font-size: 1.25em;
+    border-bottom: 2px solid #CC2431;
+}
+
+#chartdata td {
+    width: 200px;
+}
+
 
 @media screen and (max-device-width: 800px) {
     #sidebar {
@@ -112,6 +119,7 @@ h1 {
 
     #chartdiv {
         height:30vh;
+        width: 100vw;
     }
 }
 

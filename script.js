@@ -193,7 +193,7 @@ chart.data = [ {
 // CHART TABLE
     chart.events.on("datavalidated", function(ev) {
       chart.exporting.getHTML("html", {
-        addColumnNames: true, tableClass: "table table-striped table-hover table-lg"
+        addColumnNames: true, tableClass: "table table-striped table-hover"
       }, false).then(function(html) {
         var div = document.getElementById("chartdata");
         div.innerHTML = html;
