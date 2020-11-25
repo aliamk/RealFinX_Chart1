@@ -9,100 +9,177 @@ chart.numberFormatter.numberFormat = "#.a"
 
     // Data for both series
 chart.data = [ {
-      "year": "1990",
-      "funds": 12000,
-      "capital_raised": 11.5
+      "Year": "1990",
+      "Funds": 7,
+      "Capital Raised": 353
     }, {
-      "year": "1991",
-      "funds": 22000,
-      "capital_raised": 15
+      "Year": "1991",
+      "Funds": 6,
+      "Capital Raised": 969
     }, {
-      "year": "1992",
-      "funds": 24000,
-      "capital_raised": 16
+      "Year": "1992",
+      "Funds": 11,
+      "Capital Raised": 2450
     }, {
-      "year": "1993",
-      "funds": 28000,
-      "capital_raised": 18
+      "Year": "1993",
+      "Funds": 18,
+      "Capital Raised": 1934
     }, {
-      "year": "1994",
-      "funds": 27000,
-      "capital_raised": 17
+      "Year": "1994",
+      "Funds": 20,
+      "Capital Raised": 4083
     }, {
-      "year": "1995",
-      "funds": 30000,
-      "capital_raised": 26.2
+      "Year": "1995",
+      "Funds": 45,
+      "Capital Raised": 8003
     }, {
-      "year": "2000",
-      "funds": 34000,
-      "capital_raised": 30.1      
+      "Year": "1996",
+      "Funds": 44,
+      "Capital Raised": 10033
     }, {
-      "year": "2005",
-      "funds": 31000,
-      "capital_raised": 29.5
+      "Year": "1997",
+      "Funds": 56,
+      "Capital Raised": 14721
     }, {
-      "year": "2010",
-      "funds": 92000,
-      "capital_raised": 30.6,
-      "lineDash": "5,5",
+      "Year": "1998",
+      "Funds": 62,
+      "Capital Raised": 18729
     }, {
-        "year": "2015",
-        "funds": 20000,
-        "capital_raised": 30.6,
-        "lineDash": "5,5",
+      "Year": "1999",
+      "Funds": 79,
+      "Capital Raised": 17402
     }, {
-        "year": "2017",
-        "funds": 130000,
-        "capital_raised": 40.6        
+      "Year": "2000",
+      "Funds": 67,
+      "Capital Raised": 19088      
     }, {
-      "year": "2020",
-      "funds": 197000,
-      "capital_raised": 59.6,
+      "Year": "2001",
+      "Funds": 77,
+      "Capital Raised": 23026      
+    }, {
+      "Year": "2002",
+      "Funds": 95,
+      "Capital Raised": 15610      
+    }, {
+      "Year": "2003",
+      "Funds": 118,
+      "Capital Raised": 17938      
+    }, {
+      "Year": "2004",
+      "Funds": 215,
+      "Capital Raised": 50920      
+    }, {
+      "Year": "2005",
+      "Funds": 286,
+      "Capital Raised": 81284
+    }, {
+      "Year": "2006",
+      "Funds": 346,
+      "Capital Raised": 106065
+    }, {
+      "Year": "2007",
+      "Funds": 426,
+      "Capital Raised": 145694
+    }, {
+      "Year": "2008",
+      "Funds": 404,
+      "Capital Raised": 151303
+    }, {
+      "Year": "2009",
+      "Funds": 243,
+      "Capital Raised": 59611
+    }, {
+      "Year": "2010",
+      "Funds": 289,
+      "Capital Raised": 69571,
+      // "lineDash": "5,5",
+    }, {
+      "Year": "2011",
+      "Funds": 353,
+      "Capital Raised": 89561,
+      // "lineDash": "5,5",
+    }, {
+      "Year": "2012",
+      "Funds": 417,
+      "Capital Raised": 103504,
+      // "lineDash": "5,5",
+    }, {
+      "Year": "2013",
+      "Funds": 458,
+      "Capital Raised": 138347,
+      // "lineDash": "5,5",
+    }, {
+      "Year": "2014",
+      "Funds": 478,
+      "Capital Raised": 147904,
+      // "lineDash": "5,5",
+    }, {
+        "Year": "2015",
+        "Funds": 505,
+        "Capital Raised": 168215,
+        // "lineDash": "5,5",
+    }, {
+      "Year": "2016",
+      "Funds": 504,
+      "Capital Raised": 149714,
+      // "lineDash": "5,5",
+    }, {
+          "Year": "2017",
+          "Funds": 549,
+          "Capital Raised": 166255        
+    }, {
+        "Year": "2018",
+        "Funds": 561,
+        "Capital Raised": 164107        
+    }, {
+      "Year": "2019",
+      "Funds": 484,
+      "Capital Raised": 191412    
 
-      "strokeWidth": 1,
-      "columnDash": "5,5",
-      "fillOpacity": 0.2,
-      "additional": "(projection)"
-    } ];
+      // "strokeWidth": 1,
+      // "columnDash": "5,5",
+      // "fillOpacity": 0.2,
+      // "additional": "(projection)"
+}];
     
     // Create axes
     var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-    dateAxis.dateFormats.setKey("year", "yyyy");
+    dateAxis.dateFormats.setKey("Year", "yyyy");
     dateAxis.title.text = "Year"
     dateAxis.renderer.grid.template.stroke = "grey";
 
     /* LEFT Y AXIS  (LINE) */
     var valueAxis1 = chart.yAxes.push(new am4charts.ValueAxis());
-    valueAxis1.title.text = "Number of Unique Funds";
+    valueAxis1.title.text = "Number of Funds";
     valueAxis1.renderer.grid.template.disabled = true;
-    valueAxis1.renderer.minGridDistance = 50;
+    valueAxis1.renderer.minGridDistance = 100;
     
 
     /* RIGHT Y AXIS (COLUMNS) */
     var valueAxis2 = chart.yAxes.push(new am4charts.ValueAxis());
-    valueAxis2.title.text = "USD (billions)";
+    valueAxis2.title.text = "Capital Gains (USD billions)";
     valueAxis2.renderer.opposite = true;    
     valueAxis2.renderer.grid.template.stroke = "grey";
-    valueAxis2.renderer.minGridDistance = 50;
+    valueAxis2.renderer.minGridDistance = 100;
     
     // LINE SERIES
     var series1 = chart.series.push(new am4charts.LineSeries());
-    series1.dataFields.valueY = "funds";
-    series1.dataFields.dateX = "year";
+    series1.dataFields.valueY = "Funds";
+    series1.dataFields.dateX = "Year";
     series1.name = "Funds";
     series1.stroke = am4core.color("black");
     series1.strokeWidth = 2;
     series1.tensionX = 2;
     series1.yAxis = valueAxis1;
-    // series1.tooltipText = "{name}\n[bold font-size: 20]{valueY}[/]";
+    series1.tooltipText = "{name}\n[bold font-size: 20]{valueY}[/]";
     
     /* Create COLUMN series */
     var series2 = chart.series.push(new am4charts.ColumnSeries());
-    series2.dataFields.valueY = "capital_raised";
-    series2.dataFields.dateX = "year";
+    series2.dataFields.valueY = "Capital Raised";
+    series2.dataFields.dateX = "Year";
     series2.yAxis = valueAxis2;
     series2.name = "Capital Raised";
-    // series2.tooltipText = "{name}\n[bold font-size: 20]${valueY}M[/]";
+    series2.tooltipText = "{name}\n[bold font-size: 20]${valueY}[/]";
     // series2.fill = chart.colors.getIndex(0); 
     series2.columns.template.fill = am4core.color("#CC2431")
     series2.strokeWidth = 0;
@@ -113,55 +190,12 @@ chart.data = [ {
     chart.legend = new am4charts.Legend();
     chart.legend.position = "bottom";
 
-
-
-    /* Create CATEGORY axes 
-    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-    categoryAxis.dataFields.category = "year";
-    categoryAxis.renderer.minGridDistance = 30;
- Create COLUMS's VALUE axis 
-    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-    valueAxis.renderer.opposite = true;     // moved column y axis to the right
-    valueAxis.title.text = "USD (billions)";
-    // valueAxis.title.rotation = 0;
- Create COLUMN series 
-    var columnSeries = chart.series.push(new am4charts.ColumnSeries());
-    columnSeries.name = "Capital Raised";
-    columnSeries.dataFields.valueY = "capital_raised";
-    columnSeries.dataFields.categoryX = "year";
-    
-    columnSeries.columns.template.tooltipText = "[#fff font-size: 15px]{name} in {categoryX}:\n[/][#fff font-size: 20px]{valueY}[/] [#fff]{additional}[/]"
-    columnSeries.columns.template.fill = am4core.color("#CC2431");                  // changed column color from default green
-    columnSeries.columns.template.propertyFields.fillOpacity = "fillOpacity";
-    columnSeries.columns.template.propertyFields.stroke = "stroke";
-    columnSeries.columns.template.propertyFields.strokeWidth = "strokeWidth";
-    columnSeries.columns.template.propertyFields.strokeDasharray = "columnDash";
-    columnSeries.tooltip.label.textAlign = "middle";
-
-    /* Create LINE's value axis 
-     var SecValueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-     SecValueAxis.renderer.opposite = false;
-     SecValueAxis.title.text = "Number of Unique Funds";
-     // valueAxis.title.rotation = 0;
- Create LINE series 
-    var lineSeries = chart.series.push(new am4charts.LineSeries());
-    lineSeries.name = "Funds"
-    lineSeries.dataFields.valueY = "funds";
-    lineSeries.dataFields.categoryX = "year";
-    
-    lineSeries.stroke = am4core.color("black");         // changed colour of line
-    lineSeries.strokeWidth = 2;
-    lineSeries.propertyFields.strokeDasharray = "lineDash";
-    lineSeries.tooltip.label.textAlign = "middle";
-    
-    var bullet = lineSeries.bullets.push(new am4charts.Bullet());
-    bullet.fill = am4core.color("#fdd400"); // tooltips grab fill from parent by default
-    bullet.tooltipText = "[#fff font-size: 15px]{name} in {categoryX}:\n[/][#fff font-size: 20px]{valueY}[/] [#fff]{additional}[/]"
-    var circle = bullet.createChild(am4core.Circle);
-    circle.radius = 4;
-    circle.fill = am4core.color("#fff");
-    circle.strokeWidth = 3;
-    
-    chart.data = data;
-    
-    }); // end am4core.ready() */
+// CHART TABLE
+    chart.events.on("datavalidated", function(ev) {
+      chart.exporting.getHTML("html", {
+        addColumnNames: true, tableClass: "table table-striped table-hover table-lg"
+      }, false).then(function(html) {
+        var div = document.getElementById("chartdata");
+        div.innerHTML = html;
+      });
+    });
