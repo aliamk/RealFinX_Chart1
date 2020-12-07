@@ -5,136 +5,141 @@ am4core.useTheme(am4themes_animated);
 
 // Create chart instance
 var chart = am4core.create("chartdiv", am4charts.XYChart);
-// chart.numberFormatter.numberFormat = "#.##"
+chart.numberFormatter.numberFormat = "#a"
+chart.numberFormatter.bigNumberPrefixes = [
+  { "number": 1e+3, "suffix": "K" },
+  { "number": 1e+6, "suffix": "M" },
+  { "number": 1e+9, "suffix": "" }
+];
 
     // Data for both series
 chart.data = [{
       "Year of Final Close": "1990",
       "Number of Funds": 7,
-      "Capital Raised": 353
+      "Capital Raised": 353000000
     }, {
       "Year of Final Close": "1991",
       "Number of Funds": 6,
-      "Capital Raised": 969
+      "Capital Raised": 969000000
     }, {
       "Year of Final Close": "1992",
       "Number of Funds": 11,
-      "Capital Raised": 2450
+      "Capital Raised": 2450000000
     }, {
       "Year of Final Close": "1993",
       "Number of Funds": 18,
-      "Capital Raised": 1934
+      "Capital Raised": 1934000000
     }, {
       "Year of Final Close": "1994",
       "Number of Funds": 20,
-      "Capital Raised": 4083
+      "Capital Raised": 4083000000
     }, {
       "Year of Final Close": "1995",
       "Number of Funds": 45,
-      "Capital Raised": 8003
+      "Capital Raised": 8003000000
     }, {
       "Year of Final Close": "1996",
       "Number of Funds": 44,
-      "Capital Raised": 10033
+      "Capital Raised": 10033000000
     }, {
       "Year of Final Close": "1997",
       "Number of Funds": 56,
-      "Capital Raised": 14721
+      "Capital Raised": 14721000000
     }, {
       "Year of Final Close": "1998",
       "Number of Funds": 62,
-      "Capital Raised": 18729
+      "Capital Raised": 18729000000
     }, {
       "Year of Final Close": "1999",
       "Number of Funds": 79,
-      "Capital Raised": 17402
+      "Capital Raised": 17402000000
     }, {
       "Year of Final Close": "2000",
       "Number of Funds": 67,
-      "Capital Raised": 19088      
+      "Capital Raised": 19088000000      
     }, {
       "Year of Final Close": "2001",
       "Number of Funds": 77,
-      "Capital Raised": 23026      
+      "Capital Raised": 23026000000      
     }, {
       "Year of Final Close": "2002",
       "Number of Funds": 95,
-      "Capital Raised": 15610      
+      "Capital Raised": 15610000000      
     }, {
       "Year of Final Close": "2003",
       "Number of Funds": 118,
-      "Capital Raised": 17938      
+      "Capital Raised": 17938000000      
     }, {
       "Year of Final Close": "2004",
       "Number of Funds": 215,
-      "Capital Raised": 50920      
+      "Capital Raised": 50920000000      
     }, {
       "Year of Final Close": "2005",
       "Number of Funds": 286,
-      "Capital Raised": 81284
+      "Capital Raised": 81284000000
     }, {
       "Year of Final Close": "2006",
       "Number of Funds": 346,
-      "Capital Raised": 106065
+      "Capital Raised": 106065000000
     }, {
       "Year of Final Close": "2007",
       "Number of Funds": 426,
-      "Capital Raised": 145694
+      "Capital Raised": 145694000000
     }, {
       "Year of Final Close": "2008",
       "Number of Funds": 404,
-      "Capital Raised": 151303
+      "Capital Raised": 151303000000
     }, {
       "Year of Final Close": "2009",
       "Number of Funds": 243,
-      "Capital Raised": 59611
+      "Capital Raised": 59611000000
     }, {
       "Year of Final Close": "2010",
       "Number of Funds": 289,
-      "Capital Raised": 69571,
+      "Capital Raised": 69571000000,
       // "lineDash": "5,5",
     }, {
       "Year of Final Close": "2011",
       "Number of Funds": 353,
-      "Capital Raised": 89561,
+      "Capital Raised": 89561000000,
       // "lineDash": "5,5",
     }, {
       "Year of Final Close": "2012",
       "Number of Funds": 417,
-      "Capital Raised": 103504,
+      "Capital Raised": 103504000000,
       // "lineDash": "5,5",
     }, {
       "Year of Final Close": "2013",
       "Number of Funds": 458,
-      "Capital Raised": 138347,
+      "Capital Raised": 138347000000,
       // "lineDash": "5,5",
     }, {
       "Year of Final Close": "2014",
       "Number of Funds": 478,
-      "Capital Raised": 147904,
+      "Capital Raised": 147904000000,
       // "lineDash": "5,5",
     }, {
         "Year of Final Close": "2015",
         "Number of Funds": 505,
-        "Capital Raised": 168215,
+        "Capital Raised": 168215000000,
         // "lineDash": "5,5",
     }, {
       "Year of Final Close": "2016",
       "Number of Funds": 504,
-      "Capital Raised": 149714,
+      "Capital Raised": 149714000000,
       // "lineDash": "5,5",
     }, {
           "Year of Final Close": "2017",
           "Number of Funds": 549,
-          "Capital Raised": 166255        
+          "Capital Raised": 166255000000        
     }, {
         "Year of Final Close": "2018",
         "Number of Funds": 561,
-        "Capital Raised": 164107        
+        "Capital Raised": 164107000000        
     }, {
       "Year of Final Close": "2019",
       "Number of Funds": 484,
-      "Capital Raised": 191412    
+      "Capital Raised": 191412000000    
 
       // "strokeWidth": 1,
       // "columnDash": "5,5",
