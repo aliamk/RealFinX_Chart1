@@ -9,131 +9,131 @@ var chart = am4core.create("chartdiv", am4charts.XYChart);
 
     // Data for both series
 chart.data = [{
-      "Year": "1990",
-      "Funds": 7,
+      "Year of Final Close": "1990",
+      "Number of Funds": 7,
       "Capital Raised": 353
     }, {
-      "Year": "1991",
-      "Funds": 6,
+      "Year of Final Close": "1991",
+      "Number of Funds": 6,
       "Capital Raised": 969
     }, {
-      "Year": "1992",
-      "Funds": 11,
+      "Year of Final Close": "1992",
+      "Number of Funds": 11,
       "Capital Raised": 2450
     }, {
-      "Year": "1993",
-      "Funds": 18,
+      "Year of Final Close": "1993",
+      "Number of Funds": 18,
       "Capital Raised": 1934
     }, {
-      "Year": "1994",
-      "Funds": 20,
+      "Year of Final Close": "1994",
+      "Number of Funds": 20,
       "Capital Raised": 4083
     }, {
-      "Year": "1995",
-      "Funds": 45,
+      "Year of Final Close": "1995",
+      "Number of Funds": 45,
       "Capital Raised": 8003
     }, {
-      "Year": "1996",
-      "Funds": 44,
+      "Year of Final Close": "1996",
+      "Number of Funds": 44,
       "Capital Raised": 10033
     }, {
-      "Year": "1997",
-      "Funds": 56,
+      "Year of Final Close": "1997",
+      "Number of Funds": 56,
       "Capital Raised": 14721
     }, {
-      "Year": "1998",
-      "Funds": 62,
+      "Year of Final Close": "1998",
+      "Number of Funds": 62,
       "Capital Raised": 18729
     }, {
-      "Year": "1999",
-      "Funds": 79,
+      "Year of Final Close": "1999",
+      "Number of Funds": 79,
       "Capital Raised": 17402
     }, {
-      "Year": "2000",
-      "Funds": 67,
+      "Year of Final Close": "2000",
+      "Number of Funds": 67,
       "Capital Raised": 19088      
     }, {
-      "Year": "2001",
-      "Funds": 77,
+      "Year of Final Close": "2001",
+      "Number of Funds": 77,
       "Capital Raised": 23026      
     }, {
-      "Year": "2002",
-      "Funds": 95,
+      "Year of Final Close": "2002",
+      "Number of Funds": 95,
       "Capital Raised": 15610      
     }, {
-      "Year": "2003",
-      "Funds": 118,
+      "Year of Final Close": "2003",
+      "Number of Funds": 118,
       "Capital Raised": 17938      
     }, {
-      "Year": "2004",
-      "Funds": 215,
+      "Year of Final Close": "2004",
+      "Number of Funds": 215,
       "Capital Raised": 50920      
     }, {
-      "Year": "2005",
-      "Funds": 286,
+      "Year of Final Close": "2005",
+      "Number of Funds": 286,
       "Capital Raised": 81284
     }, {
-      "Year": "2006",
-      "Funds": 346,
+      "Year of Final Close": "2006",
+      "Number of Funds": 346,
       "Capital Raised": 106065
     }, {
-      "Year": "2007",
-      "Funds": 426,
+      "Year of Final Close": "2007",
+      "Number of Funds": 426,
       "Capital Raised": 145694
     }, {
-      "Year": "2008",
-      "Funds": 404,
+      "Year of Final Close": "2008",
+      "Number of Funds": 404,
       "Capital Raised": 151303
     }, {
-      "Year": "2009",
-      "Funds": 243,
+      "Year of Final Close": "2009",
+      "Number of Funds": 243,
       "Capital Raised": 59611
     }, {
-      "Year": "2010",
-      "Funds": 289,
+      "Year of Final Close": "2010",
+      "Number of Funds": 289,
       "Capital Raised": 69571,
       // "lineDash": "5,5",
     }, {
-      "Year": "2011",
-      "Funds": 353,
+      "Year of Final Close": "2011",
+      "Number of Funds": 353,
       "Capital Raised": 89561,
       // "lineDash": "5,5",
     }, {
-      "Year": "2012",
-      "Funds": 417,
+      "Year of Final Close": "2012",
+      "Number of Funds": 417,
       "Capital Raised": 103504,
       // "lineDash": "5,5",
     }, {
-      "Year": "2013",
-      "Funds": 458,
+      "Year of Final Close": "2013",
+      "Number of Funds": 458,
       "Capital Raised": 138347,
       // "lineDash": "5,5",
     }, {
-      "Year": "2014",
-      "Funds": 478,
+      "Year of Final Close": "2014",
+      "Number of Funds": 478,
       "Capital Raised": 147904,
       // "lineDash": "5,5",
     }, {
-        "Year": "2015",
-        "Funds": 505,
+        "Year of Final Close": "2015",
+        "Number of Funds": 505,
         "Capital Raised": 168215,
         // "lineDash": "5,5",
     }, {
-      "Year": "2016",
-      "Funds": 504,
+      "Year of Final Close": "2016",
+      "Number of Funds": 504,
       "Capital Raised": 149714,
       // "lineDash": "5,5",
     }, {
-          "Year": "2017",
-          "Funds": 549,
+          "Year of Final Close": "2017",
+          "Number of Funds": 549,
           "Capital Raised": 166255        
     }, {
-        "Year": "2018",
-        "Funds": 561,
+        "Year of Final Close": "2018",
+        "Number of Funds": 561,
         "Capital Raised": 164107        
     }, {
-      "Year": "2019",
-      "Funds": 484,
+      "Year of Final Close": "2019",
+      "Number of Funds": 484,
       "Capital Raised": 191412    
 
       // "strokeWidth": 1,
@@ -163,8 +163,8 @@ chart.data = [{
     
     // LINE SERIES
     var series1 = chart.series.push(new am4charts.LineSeries());
-    series1.dataFields.valueY = "Funds";
-    series1.dataFields.dateX = "Year";
+    series1.dataFields.valueY = "Number of Funds";
+    series1.dataFields.dateX = "Year of Final Close";
     series1.name = "Number of Funds";
     series1.stroke = am4core.color("black");
     series1.strokeWidth = 2;
@@ -188,7 +188,7 @@ chart.data = [{
     /* Create COLUMN(BAR) series */
     var series2 = chart.series.push(new am4charts.ColumnSeries());
     series2.dataFields.valueY = "Capital Raised";
-    series2.dataFields.dateX = "Year";
+    series2.dataFields.dateX = "Year of Final Close";
     series2.yAxis = valueAxis2;
     series2.name = "Capital Raised";
     series2.columns.template.tooltipText = "{name}\n[bold font-size: 20]${valueY}[/]";
