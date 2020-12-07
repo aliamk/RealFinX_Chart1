@@ -33,6 +33,7 @@ html, body {
 
 #searchBar {   
     margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0;
 }
 
@@ -53,6 +54,7 @@ input {
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    caret-color:  #CC2431;
 }
 
 input[type=text] {
