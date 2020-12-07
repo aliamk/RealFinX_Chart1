@@ -1,11 +1,11 @@
 
-   // Themes begin
+// Themes begin
 am4core.useTheme(am4themes_animated);
 // Themes end
 
 // Create chart instance
 var chart = am4core.create("chartdiv", am4charts.XYChart);
-// chart.numberFormatter.numberFormat = "#.a"
+// chart.numberFormatter.numberFormat = "#.##"
 
     // Data for both series
 chart.data = [{
@@ -204,7 +204,7 @@ chart.data = [{
     chart.legend = new am4charts.Legend();
     chart.legend.position = "bottom";
 
-//  DATA TABLE
+    // DATA TABLE
     chart.events.on("datavalidated", function(ev) {
       chart.exporting.getHTML("html", {
         addColumnNames: true, tableClass: "table table-striped table-hover"

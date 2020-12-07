@@ -74,7 +74,7 @@ h1 {
 
 #chartdiv {
     width: 80vw;
-    height:85vh;
+    height:90vh;
     min-height: 50vh;        
     margin-bottom: 2em;
     flex-direction: column;
